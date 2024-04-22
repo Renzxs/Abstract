@@ -17,3 +17,18 @@ menuBtn.addEventListener("click", () => {
         mobileMenu.style.marginTop = "0px";
     }
 })
+
+const sec1Observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+        else {
+            entry.target.classList.remove("show");
+        }
+    })
+});
+
+const sec1 = document.querySelectorAll(".sec-1");
+
+sec1.forEach((el) => {sec1Observer.observe(el)});
