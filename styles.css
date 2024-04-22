@@ -220,6 +220,29 @@ body {
         padding: 10px;
         text-align: center;
 
+        .head-text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: centers;
+
+            .space {
+                width: 10px;
+            }
+
+            .letter {
+                transition: all 0.5s;
+            }
+
+            
+            .letter:hover {
+                background: -webkit-linear-gradient(#3f5efb, #fc466b);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: translateY(-20px);
+            }
+        }
+
         .search {
             background-color: white;
             margin-top: 20px;
