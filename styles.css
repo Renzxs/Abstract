@@ -230,11 +230,11 @@ body {
                 width: 10px;
             }
 
-            .letter {
+            .letter { 
                 transition: all 0.5s;
             }
 
-            
+        
             .letter:hover {
                 background: -webkit-linear-gradient(#3f5efb, #fc466b);
                 background-clip: text;
@@ -434,4 +434,29 @@ body {
         flex-direction: column;
         padding: 20px 20px;
     }
+}
+
+.help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--Blue);
+    color: white;
+    font-family: 'RobotoBold';
+    transition: all 0.5s;
+}
+
+.help img {
+    width: 25px;
+    height: 25px;
+}
+
+.help:hover {
+    opacity: 0.5;
 }
